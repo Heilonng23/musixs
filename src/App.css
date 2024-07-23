@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffd008;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0 0 0; /* Combine margin-top and margin-bottom */
+}
+
+nav .topcenter,
+nav .different {
+  display: flex;
+  align-items: center; /* Ensure items inside these divs are centered */
+  font-size: 20px;
+  font-weight: 700;
+  border: 4px solid black;
+  border-radius: 100px;
+  margin-bottom: 0;
+}
+
+.topcenter p {
+  margin-right: 0;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.topcenter p:hover {
+  background-color: #151515;
+  border-radius: 100px;
+  color: white;
+}
+
+nav .different {
+  background-color: #151515;
+  margin: 0 20px 0 0; /* Adjust margin for consistent spacing */
+}
+.imageand p {
+  font-family: "Sora", sans-serif;
+}
+nav p {
+  margin: 0;
+  padding: 10px 20px;
+}
+.different p:hover {
+  text-decoration: underline;
+  background-color: white;
+  border-radius: 100px;
+  color: black;
+}
+nav span {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 6px 0 0 40px; /* Adjust margin for consistent spacing */
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.imageand {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  margin-bottom: 30px;
+}
+header p {
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 40px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin: 0;
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1em;
+}
+header img {
+  margin: 0;
+  width: 400px;
+  border-radius: 40px;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 90%
+  );
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.btn {
+  background: #fffcd5;
+  box-shadow: 4px 4px #ffe00b, 9px 9px #151515;
+  color: #151515;
+  text-transform: lowercase;
+  border: solid 2px #151515;
+
+  text-decoration: none;
+
+  padding: 18px 32px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  cursor: pointer;
+  overflow: hidden;
+  transition-delay: 0s !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px;
+  font-family: sans-serif;
+}
+.btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: #151515;
+  z-index: -1;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.btn:hover::before {
+  width: 100%;
+  left: 0;
+  right: unset;
+}
+.btn:hover {
+  box-shadow: 0 0 #ffe00b, 0 0 #151515;
+  color: white;
+}
